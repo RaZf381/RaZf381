@@ -1,8 +1,8 @@
-<h1 align="center">Rehan Zafar</h1>
+<h1 align="center">Hey, I'm Rehan Zafar 👋</h1>
 <p align="center"><strong>Python learner · Building useful things, one project at a time</strong></p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F766E,100:2563EB&height=200&section=header&text=Rehan%20Zafar&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Python%20Learner%20%E2%80%A2%20Building%20Useful%20Things&descAlignY=60&descSize=18" width="100%" alt="Rehan Zafar — Python learner building useful projects">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F766E,100:2563EB&height=150&section=header" width="100%" alt="Teal and blue profile banner">
 </p>
 
 <p align="center">
@@ -10,29 +10,69 @@
   <img src="https://img.shields.io/badge/Learning-Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Learning Python">
 </p>
 
+<p align="center">
+  <a href="#-about-me">About</a> · <a href="#-current-focus">Focus</a> · <a href="#-featured-project">Project</a> · <a href="#-github-activity">Activity</a> · <a href="#-github-at-a-glance">Stats</a>
+</p>
+
+---
+
 ## 👋 About me
 
-I'm **Rehan Zafar**. I'm learning Python by turning programming fundamentals into small, practical projects. This profile is my build-in-public journey: what I'm learning, what I've made, and what I'm improving next.
+I'm **Rehan Zafar**, an aspiring developer learning Python by turning programming fundamentals into small, practical projects. This profile is my learning log: what I'm building, what I'm practising, and what I'd like to improve next.
 
-## 🧭 My current focus
+## 🧭 Current focus
 
-- Strengthening Python fundamentals through hands-on projects
-- Writing clearer programs with useful input validation
-- Growing simple prototypes into more complete applications
+- Practising Python fundamentals by building working applications
+- Getting comfortable with functions, control flow, loops, and user input
+- Making programs more reliable with clear input validation
 
 ## 🚀 Featured project
 
-| Project | Built with | What it does |
+| Project | Built with | Highlights |
 | --- | --- | --- |
-| [🏦 RaZf Bank](https://github.com/RaZf381/Simple-Banking-Application) | Python 3 | A menu-driven console app for checking a balance, making deposits, and withdrawing money, with basic input validation. |
+| [🏦 RaZf Bank](https://github.com/RaZf381/Simple-Banking-Application) | Python 3 | Menu-driven balance checks, deposits, withdrawals, and basic transaction validation. |
 
-## 🛠️ Skills in progress
+<details>
+<summary>🔍 Open the RaZf Bank feature tour</summary>
 
-**Python 3** · Functions · Conditionals · Loops · User input · Input validation
+- Check the current balance, deposit money, and withdraw money from an interactive menu.
+- Reject zero or negative transactions and prevent withdrawals beyond the available balance.
+- Learn how a simple console program can be organised with functions and a loop.
 
-## 🔭 What I'm exploring next
+</details>
 
-Transaction history and persistent data storage for my banking app—then more projects as I keep learning.
+<details>
+<summary>🧠 Concepts practised in the project</summary>
+
+Functions · conditionals · while loops · user input · variables · formatted strings · input validation.
+
+</details>
+
+<details>
+<summary>💡 Why does the balance reset when the app closes?</summary>
+
+The current version keeps its balance in memory rather than saving it. Persistent storage is one of the planned improvements.
+
+</details>
+
+## 🗺️ Learning roadmap
+
+| Practising now | Exploring next |
+| --- | --- |
+| Python fundamentals, functions, loops, and validation | Transaction history, persistent storage, and better error handling |
+
+<details>
+<summary>🛠️ More ideas for future versions</summary>
+
+Account creation, authentication, and a graphical interface are also ideas listed for the project.
+
+</details>
+
+## 📈 GitHub activity
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=RaZf381&theme=tokyo-night&hide_border=true&area=true" width="100%" alt="GitHub contribution activity graph for RaZf381">
+</p>
 
 ## 📊 GitHub at a glance
 
