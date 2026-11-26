@@ -60,7 +60,10 @@ jobs:
               css = [
                   ".c{animation-iteration-count:1!important;animation-fill-mode:forwards!important}",
                   ".u{display:none!important}",
-                  ".s{width:18px!important;height:18px!important;rx:6px!important;ry:6px!important}",
+                  ".s.s0{width:18px!important;height:18px!important;rx:7px!important;ry:7px!important;x:-1px!important;y:-1px!important;fill:#e879f9!important}",
+                  ".s.s1{width:17px!important;height:17px!important;rx:6.5px!important;ry:6.5px!important;x:-0.5px!important;y:-0.5px!important;fill:#d946ef!important}",
+                  ".s.s2{width:16px!important;height:16px!important;rx:6px!important;ry:6px!important;x:0px!important;y:0px!important;fill:#c026d3!important}",
+                  ".s.s3{width:15px!important;height:15px!important;rx:5.5px!important;ry:5.5px!important;x:0.5px!important;y:0.5px!important;fill:#a21caf!important}",
                   f"@keyframes snakeFade{{0%,{route_end}%{{opacity:1}}{reset}%{{opacity:0}}100%{{opacity:0}}}}",
               ]
               for index, eat, color, clear in matches:
