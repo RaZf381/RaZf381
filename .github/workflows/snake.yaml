@@ -27,6 +27,41 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Keep eaten contribution points visible
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          css = """
+          .c{animation-iteration-count:1!important;animation-fill-mode:forwards!important}
+          .c.c0,.c.c1,.c.c2,.c.c3{fill:var(--ce)}
+          @keyframes c0{0%,42.01%{fill:var(--ce)}42.03%,100%{fill:var(--c1)}}
+          @keyframes c1{0%,44.53%{fill:var(--ce)}44.55%,100%{fill:var(--c3)}}
+          @keyframes c2{0%,43.69%{fill:var(--ce)}43.71%,100%{fill:var(--c2)}}
+          @keyframes c3{0%,51.25%{fill:var(--ce)}51.27%,100%{fill:var(--c4)}}
+          .u{display:none!important}
+          @keyframes snakeFade{0%,96%{opacity:1}98%,100%{opacity:0}}
+          .s.s0{animation:s0 11900ms linear 1 forwards,snakeFade 11900ms linear 1 forwards!important}
+          .s.s1{animation:s1 11900ms linear 1 forwards,snakeFade 11900ms linear 1 forwards!important}
+          .s.s2{animation:s2 11900ms linear 1 forwards,snakeFade 11900ms linear 1 forwards!important}
+          .s.s3{animation:s3 11900ms linear 1 forwards,snakeFade 11900ms linear 1 forwards!important}
+          """
+
+          for filename in (
+              "github-contribution-grid-snake.svg",
+              "github-contribution-grid-snake-dark.svg",
+          ):
+              path = Path("dist") / filename
+              svg = path.read_text(encoding="utf-8")
+              if svg.count("</style>") != 1:
+                  raise RuntimeError(f"Unexpected SVG style block in {filename}")
+              if any(f".s.s{index}{{" not in svg for index in range(4)):
+                  raise RuntimeError(f"Unexpected snake SVG structure in {filename}")
+              style_end = svg.index("</style>")
+              svg = svg[:style_end] + css + svg[style_end:]
+              path.write_text(svg, encoding="utf-8")
+          PY
+
       - name: Publish snake animation
         uses: crazy-max/ghaction-github-pages@v4.2.0
         with:
