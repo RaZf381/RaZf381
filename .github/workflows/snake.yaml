@@ -60,6 +60,7 @@ jobs:
               css = [
                   ".c{animation-iteration-count:1!important;animation-fill-mode:forwards!important}",
                   ".u{display:none!important}",
+                  ".s{width:18px!important;height:18px!important;rx:6px!important;ry:6px!important}",
                   f"@keyframes snakeFade{{0%,{route_end}%{{opacity:1}}{reset}%{{opacity:0}}100%{{opacity:0}}}}",
               ]
               for index, eat, color, clear in matches:
