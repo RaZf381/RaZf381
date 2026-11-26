@@ -29,6 +29,7 @@ jobs:
 
       - name: Keep eaten contribution points visible
         run: |
+          sudo chown -R "$(id -u):$(id -g)" dist
           python - <<'PY'
           from pathlib import Path
 
@@ -58,9 +59,7 @@ jobs:
               if any(f".s.s{index}{{" not in svg for index in range(4)):
                   raise RuntimeError(f"Unexpected snake SVG structure in {filename}")
               style_end = svg.index("</style>")
-              temp_path = path.with_name(path.name + ".tmp")
-              temp_path.write_text(svg[:style_end] + css + svg[style_end:], encoding="utf-8")
-              temp_path.replace(path)
+              path.write_text(svg[:style_end] + css + svg[style_end:], encoding="utf-8")
           PY
 
       - name: Publish snake animation
