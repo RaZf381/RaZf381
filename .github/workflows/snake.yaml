@@ -37,17 +37,20 @@ jobs:
           for path in Path("dist").glob("*.svg"):
               svg = path.read_text()
               matches = re.findall(
-                  r"@keyframes c([0-3])\{0%,([\d.]+)%\{fill:var\(--(c[0-4])\)\}([\d.]+)%,100%\{fill:var\(--ce\)\}\}",
+                  r"@keyframes c([0-3])\{([\d.]+)%\{fill:var\(--(c[0-4])\)\}([\d.]+)%,100%\{fill:var\(--ce\)\}\}",
                   svg,
               )
               duration_match = re.search(r"\.s\{[^}]*animation:[^;]*?([\d.]+)ms infinite", svg)
-              frames_match = re.search(r"@keyframes s0\{(.*?)\}\.s\.s0\{", svg, re.DOTALL)
-              if len(matches) != 4 or not duration_match or not frames_match:
+              snake_frames = re.findall(r"@keyframes s[0-3]\{(.*?)\}\.s\.s[0-3]\{", svg, re.DOTALL)
+              if len(matches) != 4 or not duration_match or not snake_frames:
                   raise ValueError(f"Could not parse generated SVG animation in {path}")
 
-              frames = frames_match.group(1)
-              reset_match = re.search(r"0%,([\d.]+)%\{transform:", frames)
-              route_times = [float(t) for t in re.findall(r"([\d.]+)%\{transform:", frames)]
+              reset_match = re.search(r"0%,([\d.]+)%\{transform:", snake_frames[0])
+              route_times = [
+                  float(t)
+                  for frames in snake_frames
+                  for t in re.findall(r"([\d.]+)%\{transform:", frames)
+              ]
               if not reset_match or not route_times:
                   raise ValueError(f"Could not parse snake route timing in {path}")
 
