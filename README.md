@@ -1,3 +1,6 @@
+<h1 align="center">Rehan Zafar</h1>
+<p align="center"><strong>Python learner · Building useful things, one project at a time</strong></p>
+
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F766E,100:2563EB&height=200&section=header&text=Rehan%20Zafar&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Python%20Learner%20%E2%80%A2%20Building%20Useful%20Things&descAlignY=60&descSize=18" width="100%" alt="Rehan Zafar — Python learner building useful projects">
 </p>
