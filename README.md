@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="#-about-me">About</a> · <a href="#-current-focus">Focus</a> · <a href="#-featured-project">Project</a> · <a href="#-github-activity">Activity</a> · <a href="#-github-at-a-glance">Stats</a>
+  <a href="#-about-me">About</a> · <a href="#-current-focus">Focus</a> · <a href="#-featured-project">Project</a> · <a href="#-contribution-snake">Activity</a> · <a href="#-github-at-a-glance">Stats</a>
 </p>
 
 ---
@@ -68,10 +68,13 @@ Account creation, authentication, and a graphical interface are also ideas liste
 
 </details>
 
-## 📈 GitHub activity
+## 🐍 Contribution snake
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=RaZf381&theme=tokyo-night&hide_border=true&area=true" width="100%" alt="GitHub contribution activity graph for RaZf381">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RaZf381/RaZf381/output/github-contribution-grid-snake-dark.svg">
+    <img src="https://raw.githubusercontent.com/RaZf381/RaZf381/output/github-contribution-grid-snake.svg" width="100%" alt="Animated snake eating apples across RaZf381's GitHub contribution grid">
+  </picture>
 </p>
 
 ## 📊 GitHub at a glance
