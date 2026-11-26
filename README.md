@@ -1,16 +1,35 @@
-## Hi there 👋
+<h1 align="center">Hey, I'm Rehan Zafar 👋</h1>
 
-<!--
-**RaZf381/RaZf381** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+  Learning by building—one Python project at a time.
+</p>
 
-Here are some ideas to get you started:
+<p align="center">
+  <a href="https://github.com/RaZf381">
+    <img src="https://img.shields.io/badge/GitHub-RaZf381-181717?style=for-the-badge&logo=github" alt="GitHub">
+  </a>
+  <img src="https://img.shields.io/badge/Learning-Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Learning Python">
+</p>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+### 👨‍💻 About me
+
+- 🌱 Learning Python and building projects to practise the fundamentals.
+- 🧩 Enjoy turning new concepts into small, practical applications.
+- 🚀 Focused on learning, improving, and shipping more projects.
+
+### ⭐ Featured project
+
+**[RaZf Bank](https://github.com/RaZf381/Simple-Banking-Application)**  
+A beginner-friendly, menu-driven banking app built with Python. It lets you check a balance, make deposits, and withdraw money.
+
+### 🛠️ Currently practising
+
+`Python` · Functions · Loops · Conditionals · Input validation
+
+---
+
+<p align="center">
+  <i>Always learning. Always building.</i>
+</p>
