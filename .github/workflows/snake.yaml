@@ -70,7 +70,14 @@ jobs:
                   )
                   css.append(f".c.c{index}{{animation:c{index} {duration}ms linear 1 forwards!important}}")
 
-              css.append(f".s{{animation:s0 {duration}ms linear 1 forwards,snakeFade {duration}ms linear 1 forwards!important}}")
+              for index in range(len(snake_frames)):
+                  css.append(
+                      f".s.s{index}{{animation-name:s{index},snakeFade!important;"
+                      f"animation-duration:{duration}ms!important;"
+                      "animation-timing-function:linear!important;"
+                      "animation-iteration-count:1!important;"
+                      "animation-fill-mode:forwards!important}"
+                  )
               style_end = svg.rfind("</style>")
               if style_end < 0:
                   raise ValueError(f"Could not find SVG styles in {path}")
